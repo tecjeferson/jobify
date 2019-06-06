@@ -6,6 +6,7 @@
     }],
     "routers": [{
         "src": "/.*",
-        "dest": "index.js"
+        "dest": "index.js" 
     }]
+    
 }
