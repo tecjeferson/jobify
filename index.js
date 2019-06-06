@@ -1,4 +1,4 @@
-//TODO parado em 1:28:00 Editar formulario
+//TODO parado em 1:58:00 Mudança no index.js para colocar no zeit
 
 const express = require('express')
 const sqlite = require('sqlite')
@@ -8,6 +8,8 @@ const bodyParser = require('body-parser')
 const dbConnection = sqlite.open('banco.sqlite', {
     Promise
 })
+
+const port = process.env.PORT || 3000
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
@@ -109,7 +111,7 @@ const init = async () => {
 }
 init()
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.log('Não foi possivel iniciar o servidor Jobify')
     } else {
