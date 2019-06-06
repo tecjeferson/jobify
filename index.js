@@ -107,6 +107,8 @@ const init = async () => {
     //const vaga = 'Social Media (San Francisco)'
     //const descricao = 'Vaga para Marketing Brasil'
     //await db.run(`insert into vagas(categoria, titulo, descricao) values(2,'${vaga}','${descricao}')`)
+    //mais uma linha de teste
+    //
 
 }
 init()
