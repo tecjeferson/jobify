@@ -60,6 +60,7 @@ app.get('/admin/vagas/nova', async (req, res) => {
         categorias
     })
 })
+//Editar vaga
 app.get('/admin/vagas/editar/:id', async (req, res) => {
     const db = await dbConnection
     const categorias = await db.all('select * from categorias')
